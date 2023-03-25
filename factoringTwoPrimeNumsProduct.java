@@ -71,6 +71,8 @@ public class factoringTwoPrimeNumsProduct {
             r = i;
         }
 
+        //===================IF r is odd PICK A DIFFERENT g and start again
+
         //System.out.println("r: " + r);
 
         

@@ -14,10 +14,11 @@ public class Factorer {
     }
 
 
+
+    //finds the smaller factor of the number by dividing it by i
     public long smallerFactor(long numToFactor) {
 
         if (negative) {
-
         for(long i = -2; i <= -500000; i--) {
 
             if((numToFactor % i) == 0) {
@@ -26,7 +27,6 @@ public class Factorer {
         }
 
         } else {
-
             for(long i = 2; i <= 500000; i++) {
 
                 if((numToFactor % i) == 0) {
@@ -40,10 +40,13 @@ public class Factorer {
 
 
 
+    //finds the bigger factor using the smallerFactor() method
     public long biggerFactor(long numToFactor) {
         return numToFactor / smallerFactor(numToFactor);
     }
 
+
+    //put here for convenience so you can print the object instead of each variable seperatly
     public String toString() {
 
         if(!prime){
